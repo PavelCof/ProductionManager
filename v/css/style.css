@@ -1,0 +1,263 @@
+
+  @font-face {
+    font-family: Futura; /* имя шрифта для CSS правил */
+    src: local("Futura"), /* проверяем наличие шрифта в ОС пользователя */
+     url(fonts/FuturaRegular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+*{margin: 0px;}
+header{    
+    position: relative;
+    margin: 0px auto;
+    min-width: 1550px;
+}
+
+/* Верхнее меню */
+    #header_nav{
+        position: relative;
+        margin: 0px auto;
+        min-width: 1550px;
+        height: 100px;
+        left: 0px;
+        top: 0px;
+        background: #CC3333;
+    }
+
+    #header_nav>ul{
+        list-style: none; 
+        margin-left: 120px;
+        display: inline-flex;
+        
+    }
+    #header_nav>ul>li{
+        /* display:inline-block; */
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-start; 
+        margin-left: 5px;
+        cursor: pointer;
+
+    }
+
+  /*верхнее подменю */
+
+    #header_nav>ul>li>ul{
+        /* display:inline-block; */
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start; 
+        position: absolute;
+        top:41px;
+        /* width: 190px; */
+        /* height: 87px; */
+        list-style: none; 
+        /* left: 628px;
+        top: 73px;
+        position: absolute; */
+        padding: 0px;
+        background: #F3F0F0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        z-index: 3;
+        overflow: hidden;
+
+        visibility: hidden;
+        /* visible; */
+
+    }
+
+    #header_nav>ul>li>ul>li{
+        width: 210px;
+        text-align: center;
+        padding:  15px 0px;
+        border-bottom: 1px solid #D2D1D1;
+        color: #687888;
+        cursor: pointer;
+    }
+
+    #header_nav>ul>li>ul>li:hover{
+            color:#CC3333;
+    }
+
+    #header_nav>ul>li>ul>li>span{
+        text-align: center;
+        color: #687888;
+    }
+
+   
+   #header_nav .header_logo{
+
+            margin-right: 20vw;
+            margin-top: 15px;
+            cursor: pointer;
+    }
+
+    #header_nav .header_menu{
+            display: flex;
+            list-style: none; 
+            color: red;
+            /* text-align: center; */
+            position: relative;
+            width: 165px;
+            height: 38px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            /* top: -19px; */
+            margin-top: 25px;
+            justify-content: center;
+    }
+
+   .header_menu span{
+            position: absolute;
+            text-align: center;
+            width: 165px;
+            /* height: 38px; */
+            /* margin-top: 15px;
+            padding-top: 15px; */
+            /* margin: 0px auto; */
+            font-family: Futura;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 14px;
+            padding-top: 11px;
+            color: #CC3333;
+            cursor: pointer;
+    }
+
+    #header_nav .header_exit{
+            position: absolute;
+            /* color:white;
+            padding: 25px 270px; */
+            width: 35px;
+            height: 13px;
+            right: 155px;
+            top: 43px;
+            font-family: Futura;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 13px;
+            /* identical to box height */
+            text-align: center;  
+            color: #FFFFFF;
+            cursor: pointer;
+    }
+
+
+/* Линия навигации */    
+
+    #header_navline{color: tomato;  }
+    .header_v{stroke:#D2D1D1;}
+    #header_navline>ul{display: inline-flex;}
+    .header_lineV{    
+                display: flex;
+                flex-direction: row; 
+                justify-content: flex-start; 
+                padding-right: 3px;
+    }
+
+    .header_line{
+                display: flex;
+                flex-direction: row; 
+                justify-content: flex-start; 
+                padding-right: 3px;
+                height: 13px;
+                left: 31px;
+                top: 104px;
+                padding-top: 2px;
+                font-family: Futura;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 13px;
+                /* identical to box height */
+                text-align: center;
+                color: #687888;
+                cursor: pointer;
+    }
+
+/* основной конткнт */
+    section{
+                position: relative;
+                margin: 0px auto;
+                min-width: 1550px;
+                min-height:610px ;
+                background: rgba(243, 245, 247, 1);
+                /* background: url(../imgs/slide.png); */
+                background-repeat: no-repeat; 
+                background-size: 100%; 
+        }
+
+    #container{    
+        background: #F3F0F0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 5px 3%;
+        padding:10px 35px;
+        font-family: Futura;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 13px;
+        min-width: 1410px;
+        
+    }
+
+    #container .link{cursor: pointer;}
+    #container form{display: flex;flex-direction: row; }
+    #container .column{flex-direction: column;  margin: 0 5px;  }
+    #container .row{ margin-bottom: 7px;min-width: 420px;}
+    #container .rows{ margin-bottom: 7px;width: 270px; text-align: right; }
+    #container .rowsb{ margin-bottom: 7px;width: 100px; text-align: right; }  
+    #container input{ font-family: Futura; font-style: normal; font-size: 14px; width:125px;}
+    #container>form span{min-width: 105px; }
+    .button_red{
+        color: rgba(243, 245, 247, 1);
+        width: 114px;
+        height: 26.6px;
+        background: #CC3333;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+    }
+/* подвал */
+    footer{
+            position: relative;
+            margin: 0px auto;
+            margin-top: 6px;
+            min-width: 1550px;
+            height: 88px;
+            background: rgba(243, 245, 247, 1);
+            background-image: url(../imgs/footer_logo.png);
+            background-position: right center; /* Положение фона */
+            background-repeat: no-repeat; /* Повторяем фон по горизонтали */
+    }
+
+/* подвал bg svg */
+    .contacts_V{fill:#CC3333;}
+
+/* подвал svg */
+    .cls-1,.cls-2{fill:white;}
+    .cls-2{font-size:14.94px;font-family:Arial-BoldMT, Arial;font-weight:700;}
+    .cls-3{letter-spacing:-0.02em;}
+    #EDC_logo{position:absolute; top: 10px; left:-19px;}
+
+/* кнопка контакты */    
+    #contacts_mail{
+        position:absolute; top: 17px; left:190px;
+        font-family: Futura;
+        font-style: normal;
+        font-weight: bold;
+        color: rgba(243, 245, 247, 1);
+        cursor: pointer;
+    }
+
+/* кнопка обратная связь */    
+    #contacts_feedback{
+        position:absolute; top: 39px; left:190px;
+        font-family: Futura;
+        font-style: normal;
+        font-weight: bold;
+        color: rgba(243, 245, 247, 1);
+        cursor: pointer;
+    }
+
