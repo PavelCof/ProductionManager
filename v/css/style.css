@@ -4,7 +4,7 @@
     src: local("Futura"), /* проверяем наличие шрифта в ОС пользователя */
      url(fonts/FuturaRegular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 }
-*{margin: 0px;}
+*{margin: 0px; padding: 0px;}
 header{    
     position: relative;
     margin: 0px auto;
@@ -26,8 +26,8 @@ header{
         list-style: none; 
         margin-left: 120px;
         display: inline-flex;
-        
     }
+
     #header_nav>ul>li{
         /* display:inline-block; */
         display: flex;
@@ -37,6 +37,7 @@ header{
         cursor: pointer;
 
     }
+    body{margin: 0px; padding: 0px; }
 
   /*верхнее подменю */
 
@@ -182,7 +183,7 @@ header{
                 position: relative;
                 margin: 0px auto;
                 min-width: 1550px;
-                min-height:610px ;
+                min-height:1000px ;
                 background: rgba(243, 245, 247, 1);
                 /* background: url(../imgs/slide.png); */
                 background-repeat: no-repeat; 
@@ -204,18 +205,19 @@ header{
         
     }
     #container h3{   
-   
         min-width: 1410px;
         max-width: 1450px;
         flex-basis: 1450px;
-        
         color: #CC3333;
         text-align: center;
         padding-bottom: 10px; border-bottom: 1px solid  #FFFFFF;
     }
-    #container .link{cursor: pointer;}
+    #container .link{
+        cursor: pointer;
+    }
     #container form{}
-    .form_otchet{display: flex; flex-direction: row; padding: 15px; margin-top: 20px; border-bottom: 1px solid  #FFFFFF;}
+
+    .form_otchet {display: flex; flex-direction: row; padding: 15px; margin-top: 20px; border-bottom: 1px solid  #FFFFFF;}
 
     #container .column{flex-direction: column;  margin: 0 5px;  }
     #container .column_line{flex-direction: column;  margin: 0 5px;  border-left: 1px solid #D2D1D1;}
@@ -224,11 +226,14 @@ header{
         width: 200px; margin-left: 22px;
         /* text-align: right;  */
     }
+
     #container .rows1{ margin-bottom: 7px; color: #FFFFFF;
         width: 145px; margin-left: 19px;
         /* text-align: right;  */
     }
+
     #container .rowlitle{ margin-bottom: 7px;width:5px; text-align: right;  }
+
     #container .rowsb{
         margin-bottom: 7px;
         width: 171px;
@@ -236,6 +241,7 @@ header{
         text-align: right; 
         color: #687888;
     }  
+
     #container input{ 
         font-family: Futura; 
         font-style: normal; 
@@ -251,11 +257,14 @@ header{
     .f3_inp{width: 115px;}
 
     #container input[type=date]{width: 115px;}
+    #container input[type=checkbox]{width: 25px;height: 25px;  background-color: #CC3333; color: #CC3333; border: 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;}
     #container .rows3{ margin-bottom: 7px; color: #FFFFFF;
         width: 366px; margin-left: 22px;
         /* text-align: right;  */
     }
-    #container .rows3 input{ width: 366px;    }
+    #container .rows3 input{ width: 366px; }
     #container>form span{
         text-align: start;
         min-width: 105px; 
@@ -276,6 +285,7 @@ header{
         cursor: pointer;
         color: rgba(243, 245, 247, 1);
     }
+
     br {clear: both;}
 
     /* контейнер с таблицей */
@@ -293,13 +303,11 @@ header{
         font-size: 14px;
         line-height: 13px;
         min-width: 1730px;
-        
-    
     }
+
     #container_table table{   
         border: 1px solid #F3F0F0;
     }
-
 
     #container_table th{
         min-width: 20px;
@@ -310,8 +318,8 @@ header{
         box-sizing: border-box;
         color: #FFFFFF;
         text-align: center;
-
     }
+
     #container_table tr { background-color: #ffffff; }
     #container_table tr:nth-child(odd) { background-color: #F3F0F0; }
     #container_table td{text-align: center;}
@@ -323,20 +331,22 @@ header{
         height: 45px;
         /* right: 3px; */
         text-align: right;
-
     } 
 
 /* подвал */
     footer{
-            position: relative;
-            margin: 0px auto;
-            margin-top: 6px;
-            min-width: 1550px;
-            height: 88px;
-            background: rgba(243, 245, 247, 1);
-            background-image: url(../imgs/footer_logo.png);
-            background-position: right center; /* Положение фона */
-            background-repeat: no-repeat; /* Повторяем фон по горизонтали */
+        left: 0px;
+        position: relative;
+        margin: 0px auto;
+        margin-top: 6px;
+        min-width: 1550px;
+        height: 88px;
+        background: rgba(243, 245, 247, 1);
+        background-image: url(../imgs/footer_logo.png);
+        background-position: right center;
+        background-repeat: no-repeat;
+        bottom: 0px;
+        right: 0px;
     }
 
 /* подвал bg svg */
