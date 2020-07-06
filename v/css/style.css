@@ -1,5 +1,5 @@
 
-  @font-face {
+@font-face {
     font-family: Futura; /* имя шрифта для CSS правил */
     src: local("Futura"), /* проверяем наличие шрифта в ОС пользователя */
      url(fonts/FuturaRegular.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
@@ -193,32 +193,139 @@ header{
         background: #F3F0F0;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
-        margin: 5px 3%;
-        padding:10px 35px;
+        margin: 0px auto;
+        padding:15px 35px;
         font-family: Futura;
         font-style: normal;
         font-size: 14px;
         line-height: 13px;
         min-width: 1410px;
+        max-width: 1450px;
         
     }
-
+    #container h3{   
+   
+        min-width: 1410px;
+        max-width: 1450px;
+        flex-basis: 1450px;
+        
+        color: #CC3333;
+        text-align: center;
+        padding-bottom: 10px; border-bottom: 1px solid  #FFFFFF;
+    }
     #container .link{cursor: pointer;}
-    #container form{display: flex;flex-direction: row; }
+    #container form{}
+    .form_otchet{display: flex; flex-direction: row; padding: 15px; margin-top: 20px; border-bottom: 1px solid  #FFFFFF;}
+
     #container .column{flex-direction: column;  margin: 0 5px;  }
-    #container .row{ margin-bottom: 7px;min-width: 420px;}
-    #container .rows{ margin-bottom: 7px;width: 270px; text-align: right; }
-    #container .rowsb{ margin-bottom: 7px;width: 100px; text-align: right; }  
-    #container input{ font-family: Futura; font-style: normal; font-size: 14px; width:125px;}
-    #container>form span{min-width: 105px; }
+    #container .column_line{flex-direction: column;  margin: 0 5px;  border-left: 1px solid #D2D1D1;}
+    #container .row{ margin-bottom: 7px;min-width: 420px;flex-direction: row; }
+    #container .rows{ margin-bottom: 7px; color: #FFFFFF;
+        width: 200px; margin-left: 22px;
+        /* text-align: right;  */
+    }
+    #container .rows1{ margin-bottom: 7px; color: #FFFFFF;
+        width: 145px; margin-left: 19px;
+        /* text-align: right;  */
+    }
+    #container .rowlitle{ margin-bottom: 7px;width:5px; text-align: right;  }
+    #container .rowsb{
+        margin-bottom: 7px;
+        width: 171px;
+        height: 45px;
+        text-align: right; 
+        color: #687888;
+    }  
+    #container input{ 
+        font-family: Futura; 
+        font-style: normal; 
+        font-size: 14px; 
+        height: 23px;
+        background: #FFFFFF;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        border: 0px;
+        /* color: #687888; */
+    }
+    .f5_inp{width: 200px;}
+    .f3_inp{width: 115px;}
+
+    #container input[type=date]{width: 115px;}
+    #container .rows3{ margin-bottom: 7px; color: #FFFFFF;
+        width: 366px; margin-left: 22px;
+        /* text-align: right;  */
+    }
+    #container .rows3 input{ width: 366px;    }
+    #container>form span{
+        text-align: start;
+        min-width: 105px; 
+        font-size: 14px; 
+        line-height: 13px;
+        padding-bottom: 8px;
+        color: #687888;
+    }
+    
     .button_red{
-        color: rgba(243, 245, 247, 1);
+        position: relative;
         width: 114px;
-        height: 26.6px;
+        height: 45px;
         background: #CC3333;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
+        padding: 5px 10px;
+        cursor: pointer;
+        color: rgba(243, 245, 247, 1);
     }
+    br {clear: both;}
+
+    /* контейнер с таблицей */
+    #container_table{    
+        background: #F3F0F0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px -2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin: 0px auto;
+        margin-top: 25px;
+        padding:15px 25px;
+        margin-left: 35px;
+        margin-right: 35px;
+        font-family: Futura;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 13px;
+        min-width: 1730px;
+        
+    
+    }
+    #container_table table{   
+        border: 1px solid #F3F0F0;
+    }
+
+
+    #container_table th{
+        min-width: 20px;
+        min-height: 20px;
+        background: #687888;
+        mix-blend-mode: normal;
+        font-weight:normal;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        text-align: center;
+
+    }
+    #container_table tr { background-color: #ffffff; }
+    #container_table tr:nth-child(odd) { background-color: #F3F0F0; }
+    #container_table td{text-align: center;}
+    #container_table .rowsb{
+        margin-top: 25px;
+        position: relative;
+        margin-bottom: 7px;
+        /* width: 171px; */
+        height: 45px;
+        /* right: 3px; */
+        text-align: right;
+
+    } 
+
 /* подвал */
     footer{
             position: relative;

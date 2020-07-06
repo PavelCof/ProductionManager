@@ -59,47 +59,249 @@
     <section>
         <!-- <img id=slides src="imgs/slide.png" width="100%"> -->
         <div id="container">
+             
+            <!-- <form  id=f3  action>
+                <div class="form_otchet">
+                    <div class=column>
+                            <div class=row> <span>Выбор периода c </span><input type="date" name="date_from" id="date_from" ><span> до </span><input type="date" name="date_to" id="date_to" ></div>
+                            <div class=row> <span class=link>Текущий отчет</span> <span>|</span>  <span class=link>Текущий месяц </span> <span>|</span> <span class=link>Текущий год </span> <span>|</span> <span class=link>Предыдущий год </span> </div>
+                    </div>
+                    <div class=column_line>
+                            <div class=rowlitle><span> </span></div>
+                    </div>
+                    <div class=column>
+                            <div class=rows> <span> Вид работ </span><input type="text" name="line" id="line" ></div>
+                            <div class=rows> <span> </span><span> Объект защиты </span><input type="text" name="distance" id="distance" ></div>
+                    </div>
+                    <div class=column>
+                            <div class=rows> <span>Объект защиты </span><input type="text" name="line" id="line" ></div>
+                            <div class=rows> <span> Система защиты </span><input type="text" name="distance" id="distance" ></div>
+                    </div>
+                    <div class=column>
+                            <div class=rows> <span>Подразделение </span><input type="text" name="line" id="line" ></div>
+                            <div class=rows> <span> Дата начала работ</span><input type="date" name="distance" id="distance" ></div>
+                    </div>
+                    <div class=column>
+                            <div class=rowsb> <span class='button_red' id='button_red_sub'>&nbsp;Просмотреть</span></div>
+                    </div>
+                </div>
+            </form> -->
+       
+        <h3>Введите данные о фактических работах</h3><br>
+        <form  id=f5  action>
+            <div class="form_otchet" >
+                <div class=column>
+                        <div class=rows> <span> Вид работ </span><input type="text" name="line" class="f5_inp" id="line" ></div>
+                        <div class=rows> <span> </span><span> Способ работ </span><input type="text" name="distance" class="f5_inp" id="distance" ></div>
+                </div>
+                <div class=column>
+                        <div class=rows> <span>Тип объекта защиты </span><input type="text" name="line" class="f5_inp" id="line" ></div>
+                        <div class=rows> <span> Объект защиты </span><input type="text" name="distance" class="f5_inp" id="distance" ></div>
+                        <div class=rows> <span>  </span><input type="text" name="distance" class="f5_inp" id="distance" ></div>
+                </div>
+                <div class=column>
+                        <div class=rows> <span>Противопожарные системы </span><input type="text" name="line" class="f5_inp" id="line" ></div>
+                        <div class=rows> <span> Тип системы / устройства</span><input type="text" name="distance" class="f5_inp" id="distance" ></div>
+                </div>
+                <div class=column>
+                    <div class=rows> <span>Ответственное подразделение</span><input type="text" name="line" class="f5_inp" id="line" ></div>
+                    <div class=rows> <span> Описание<br>  </span><input type="text" name="distance" class="f5_inp" id="distance" ></div>
+                </div>
+                <div class=column>
+                    <div class=rows> <span>№ УД  <br> </span><input type="text" name="line" id="line" ></div>
+                    <div class=rows> <span> Финансирование </span><input type="text" name="distance" id="distance" ></div>
+                </div>
+            </div>   
+
+            <div class="form_otchet">
+                <div class=column>
+                        <div class=rows1> <span> Проект </span></div>
+                        <div class=rows1> <span> План </span><input type="text" name="line" id="line" ></div>
+                        <div class=rows1> <span> Факт </span><input type="text" name="distance" id="distance" ></div>
+                </div>
+                <div class=column>
+                    <div class=rows1> <span> СМР </span></div>
+                    <div class=rows1> <span> План </span><input type="text" name="line"  id="line" ></div>
+                    <div class=rows1> <span> Факт </span><input type="text" name="distance"  id="distance" ></div>
+                </div>
+                <div class=column>
+                    <div class=rows1> <span> Всего </span></div>
+                    <div class=rows1> <span> План </span><input type="text" name="line"  id="line" ></div>
+                    <div class=rows1> <span> Факт </span><input type="text" name="distance"  id="distance" ></div>
+                </div>
+                <div class=column>
+                    <div class=rows1> <span>  </span></div>
+                    <div class=rows1> <span> Дата начала работ </span></div>
+                    <div class=rows1> <input type="text" name="line"  id="line" ></div>
+                    <div class=rows1> <span> Дата выполнения работ </span></div>
+                </div>
+                <div class=column>
+                    <div class=rows1> <span>  </span></div>
+                    <div class=rows1> <span> Дата окончания работ </span></div>
+                    <div class=rows1> <input type="text" name="line"  id="line" ></div>
+                    <div class=rows1> <input type="text" name="distance"  id="distance" ></div>
+                </div>
+                <div class=column>
+                    <div class=rows1> <span>  </span></div>
+                    <div class=rows1> <span> Дата окончания работ </span></div>
+                    <div class=rows1> <span> № контракта </span></div>
+                    <div class=rows1> <input type="text" name="line"  id="line" ></div>
+            
+                </div>
+                <div class=column>
+                    <div class=rows1> <span> Примечание </span></div>
+                    <div class=rows3><input type="text" name="line"  id="line" ></div>
+                </div>
+            </div>    
+            <div class="form_otchet">
+                <div class=column>
+                    <div > <span class='button_red'  id='button_red_sub'>&nbsp;Добавить новую запись</span></div>
+                </div>
+            </div>
+        </form>
+        </div> 
+        <div id="container_table">
             <!--  -->
-            <form class="form_otchet" id=f3  action>
-
-                <div class=column>
-                <!-- <h3 style="padding-left:10px;margin-left:5px;text-align: start;font-size:17px; "> <u>Данные заявки</u></h3> disabled-->
-                    <div class=row> <span>Выбор периода c </span><input type="date" name="date_from" id="date_from" ><span> до </span><input type="date" name="date_to" id="date_to" ></div>
-                    <div class=row> <span class=link>Текущий отчет</span> <span>|</span>  <span class=link>Текущий месяц </span> <span>|</span> <span class=link>Текущий год </span> <span>|</span> <span class=link>Предыдущий год </span> </div>
-                </div>
-
-                 <div class=column>
-                        <div class=rows> <span> Фильтр:</span><span> Вид работ </span><input type="text" name="line" id="line" ></div>
-                        <div class=rows> <span> </span><span> Объект защиты </span><input type="text" name="distance" id="distance" ></div>
-                </div>
-                <div class=column>
-                    <div class=rows> <span>Объект защиты </span><input type="text" name="line" id="line" ></div>
-                    <div class=rows> <span> Система защиты </span><input type="text" name="distance" id="distance" ></div>
-                </div>
-                <div class=column>
-                    <div class=rows> <span>Подразделение </span><input type="text" name="line" id="line" ></div>
-                    <div class=rows> <span> Дата начала работ</span><input type="date" name="distance" id="distance" ></div>
-                </div>
-                <div class=column>
-                    <div class=rowsb> <a class='button_red' id='button_red_sub'>&nbsp;Просмотреть</a></div>
-                    
-                </div>
-                <!--
-        
-                <div class="inline">
-                    <h3> </h3>
-                    <div> <span>Описание </span><textarea type="text" name="" id="description"> </textarea> </div>
-                    <div> <span> Примечания </span><textarea type="text" name="" id="note"> </textarea></div>
-        
-                    <div><a class='button_red' id='button_red_sub'>&nbsp;Сохранить</a></div>
-        
-                </div> -->
-        
-            </form>
+                <table>
+                    <tr>
+                        <th rowspan="3">№ УД</th>
+                        <th rowspan="3">Виды работ</th>
+                        <th rowspan="3" >Способ работ</th>
+                        <th rowspan="2" colspan="2">Системы противопожарной защиты</th>
+                        <th rowspan="3">Описание</th>
+                        <th rowspan="3">Финансирование</th>
+                        <th rowspan="2" colspan="3">Объекты защиты</th>
+                        <th rowspan="3">Подразделение</th>
+                        <th colspan="4"  >Срок</th>
+                        <th rowspan="3">№ контракта</th>
+                        <th colspan="6">Стоимость с учетом НДС (в тыс. руб.)</th>
+                        <th colspan="4" >Выполнение</th>
+                        <th rowspan="3">Примечание</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Дата начала работ</th>
+                        <th colspan="2">Дата окончания работ</th>
+                        <th colspan="2">Проект</th>
+                        <th colspan="2">СМР</th>
+                        <th colspan="2">Всего</th>
+                        <th colspan="2">Отчет на дату выполнения</th>
+                        <th colspan="2">Освоено средств, %</th>
+                          
+                    </tr>
+                    <tr>
+                        <th>Противопожарные системы</th>
+                        <th>Типы систем/ устройства</th>
+                        <th>Типы объекта защиты</th>
+                        <th>Объект</th>
+                        <th>Уровень/помещение</th>
+                        
+                        <th >План</th>
+                        <th >Факт</th>
+                        <th >План</th>
+                        <th >Факт</th>
+                        <th >План</th>
+                        <th >Факт</th>
+                        <th >План</th>
+                        <th >Факт</th>
+                        <th >План</th>
+                        <th >Факт</th>
+                        <th >План</th>
+                        <th >Факт</th>
+                        <th >План</th>
+                        <th >Факт</th>                           
+                    </tr>
+                    <tr>
+                        <td>378/17</td>
+                        <td>Поставка (приобретение)</td>
+                        <td>Подрядный метод</td>
+                        <td>Первичные средства пожаротушения</td>
+                        <td>Противопожарные преграды, водяные завесы </td>
+                        <td>Вписано описание</td>
+                        <td>Активы</td>
+                        <td>Сооружение</td>
+                        <td>Электродепо Северное</td>
+                        <td>Сооружение</td>
+                        <td>Служба Т</td>
+                        <td>02.05.2020</td>
+                        <td>30.08.2020</td>
+                        <td>02.05.2020</td>
+                        <td>30.08.2020</td>
+                        <td>547</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>Примечание</td>
+                    </tr>
+                    <tr>
+                        <td>378/17</td>
+                        <td>Поставка (приобретение)</td>
+                        <td>Подрядный метод</td>
+                        <td>Первичные средства пожаротушения</td>
+                        <td>Противопожарные преграды, водяные завесы </td>
+                        <td>Вписано описание</td>
+                        <td>Активы</td>
+                        <td>Сооружение</td>
+                        <td>Электродепо Северное</td>
+                        <td>Сооружение</td>
+                        <td>Служба Т</td>
+                        <td>02.05.2020</td>
+                        <td>30.08.2020</td>
+                        <td>02.05.2020</td>
+                        <td>30.08.2020</td>
+                        <td>547</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>Примечание</td>
+                    </tr>
+                    <tr>
+                        <td>378/17</td>
+                        <td>Поставка (приобретение)</td>
+                        <td>Подрядный метод</td>
+                        <td>Первичные средства пожаротушения</td>
+                        <td>Противопожарные преграды, водяные завесы </td>
+                        <td>Вписано описание</td>
+                        <td>Активы</td>
+                        <td>Сооружение</td>
+                        <td>Электродепо Северное</td>
+                        <td>Сооружение</td>
+                        <td>Служба Т</td>
+                        <td>02.05.2020</td>
+                        <td>30.08.2020</td>
+                        <td>02.05.2020</td>
+                        <td>30.08.2020</td>
+                        <td>547</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>147</td>
+                        <td>Примечание</td>
+                    </tr>
+                </table>
+               
+                <div class=rowsb> <span class='button_red' id='button_red_sub'>&nbsp;Сохранить</span></div>
         </div> 
     </section>
-
-
 
     <footer>
         <div id="contacts">
